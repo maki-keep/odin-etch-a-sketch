@@ -2,6 +2,8 @@
 :root {
   --color-blank: #F0F0F0;
   --color-blank-border: #E0E0E0;
+  --color-drawn: #707070;
+  --color-drawn-border: #606060;
 }
 
 /* selectors */
@@ -96,26 +98,31 @@ main {
 .title {
   text-align: center;
 }
-.grid {
+/* .grid {
   align-items: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-#etch-a-sketch {
+} */
+#canvas {
   border: 2px solid var(--color-blank-border);
+  box-sizing: content-box;
   height: 480px;
   overflow: hidden;
   position: relative;
   width: 960px;
 }
-.tile {
+/* .tile {
   background-color: var(--color-blank);
   border: 1px solid var(--color-blank-border);
   height: 16px;
   width: 16px;
 }
+.drawn {
+  background-color: var(--color-drawn);
+  border-color: var(--color-drawn-border);
+} */
 footer {
   background-color: whitesmoke;
   flex-direction: column;
